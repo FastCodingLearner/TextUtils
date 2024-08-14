@@ -6,13 +6,13 @@ function Alert(p) {
         return lword.charAt(0 ).toUpperCase() + word.slice(1)
     }
   return (
-    p.alert && <div className="container ">
+    <div className="container " style={{height : "50px", marginTop : "5px"}}>
       
       
-   <div className={`alert alert-${(p.alert.type).toLowerCase()} alert-dismissible fade show my-3" role="alert`}>
+    {  p.alert &&  <div className={`alert alert-${(p.alert.type).toLowerCase()} alert-dismissible fade show my-3" role="alert`}>
         <strong>{capital(p.alert.type)}! </strong>{p.alert.message}.
         {/* <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> */}
-       </div>
+       </div>}
       
     </div>
   )

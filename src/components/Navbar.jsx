@@ -45,9 +45,9 @@ import { useState } from 'react';
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                 {/* <Link className="nav-link active" aria-current="page" to="/home">Home</Link> */}
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="#">{p.about}</a>
-              </li> */}
+              </li>
 
             </ul>
             <form className="d-flex mx-3" role="search">

@@ -95,7 +95,7 @@ function App() {
 
   let count =[ ];
   const words = ()=>{
-    let arr = text.split(" ")
+    let arr = text.split(/\s+/)
     for(let i=0;i<arr.length;i++){
       if(arr[i]!==""){
       count.push(arr[i]);
@@ -154,6 +154,7 @@ function App() {
       
       <Navbar title="TextUtils" about="About" mode={mode}  toggleMode = {toggleMode} changeMode ={changeMode}/>
       <Alert alert={alert}/>
+      {/* <About/> */}
       <div className="container">
 
         <div className="mb-3 my-4">
